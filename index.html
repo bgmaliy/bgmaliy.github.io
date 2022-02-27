@@ -1,52 +1,213 @@
+<!doctype html>
 <html>
-  <head>
-    <!-- Meta etiketleri ile ek bilgiler veriliyor -->
-    <meta name="author" content="Acemi tasarımcı">
-    <meta name="description" content="Acemi tasarımcı web okulu">
-    <meta name="keywords" content="web,html,css">
-    <meta http-equiv="content" content-type="text/html; charset=iso-8859-9">
-    <title>İlk HTML Denemem</title>
-  </head>
-
-  <!-- Body etiketi ile sayfamızdaki renkleri ayarlıyoruz -->
-  <body text="#000000" bgcolor="#ffffff" link="#808080" vlink="#eaeaea" alink="#000000">
-    <h1> Bu büyük boyutlu ortalanmamı bir başlık</h1>
-    <br><center>
-      <h1> Bu da büyük boyutlu bir başlık fakat ortalanmış.</h1>
-    </center>
-
-    <!--
-      Center etiketi ile ortalama bittiği için buradan sonra sola dayalı
-      yazılacaktır.
-    -->
-    <br><br>
-    <font face="verdana" size="5" color="#800000">
-      Buradan itibaren paragrafıma başlayacağım.
-    </font>
-
-    <!-- p etiketi kendiliğinden bir satır boşluk verdiği için satır atlamadım -->
-    <p>
-      Bu sayfayı yapmaktaki amacım etiketlerin ve bağlı kodların nasıl
-      kullanıldığını göstermektir. Yukarıdaki kırmızı başlığı &lt;font>
-      etiketini kullanarak elde ettim. İnternette gezerken ziyaret ettiğiniz
-      sayfaların kaynağını görüntüleyerek de değişik teknikler öğrenebilirsiniz.
-    </p>
-
-    <!-- başka sayfalara link verelim -->
-    <a href="mailto:fni18444@gantep.edu.tr">Bana e-mail yollayın</a><br><br>
-    <br><br>
-
-    <!-- HTML dosyanızı yazdığınız dizine abc.png adli bir resim yerleştirin -->
-    Aşağıdaki resmin görüntülenmesi için HTML dosyanızın olduğu dizine
-    <b>abc.png</b> resmini oluşturmalısınız.<br>
-    <a href="http://www.belgeler.org"><img src="abc.png" border="0"></a>
-    <br><center>
-    <hr width=80%>
-    <u>Bu altı çizili bir yazı</u>, <i>bu yana yatık, italik, bir yazı</i><br>
-    Bu sayfanın amacı <acronym title="Hyper Text Markup Language">HTML</acronym>
-    kodları hakkında bilgi vermektir.
-    <hr width=80%>
-
-    <!-- Sayfanın başında başlatmış olduğumuz body etiketini bitiriyoruz. -->
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+    <style>
+        body{
+            background: #131313;
+            color: #525252;
+            font-family: verdana,Arial,Helvetica,sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        .sayfa{
+            width: 960px;
+            margin: auto;
+        }
+        .ust{
+            background: #232323;
+        }
+        #logo{
+            float: left;
+            width: 260px;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+        
+        #logo h1{
+            margin: 0;
+            padding: 0;
+            font-size: 42px;
+            text-transform: uppercase;
+            
+        }
+        
+        #logo h1 a{
+            font-family: Georgia;
+            text-decoration: none;
+            color: #DBDBDB;
+            letter-spacing: 3px;
+        }
+        
+        #logo p{
+            color: #DBDBDB;
+            font-family: Georgia;
+            margin-left: 3px;
+            margin-top: 0;
+            padding-top: 0;
+            letter-spacing: 2px;
+        }
+        
+        #menu{
+            float: right;
+            width: 650px;
+            margin: 30px 0 0 0;
+            padding: 0;
+            font-size: 13px;
+            text-align: right;
+        }
+        
+        #menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        #menu ul li{
+            display: inline;
+            margin-right: 35px;
+        }
+        
+        #menu ul li a{
+            text-decoration: none;
+            font-size: 13px;
+            font-family: Verdana;
+            color: #DBDBDB;
+        }
+        
+        .orta{
+            
+            margin-top: 20px;
+        }
+        .orta-sol{
+            width: 575px;
+            float: left;
+        }
+        .orta-sag{
+            width: 360px;
+            float: right;
+            height: 280px;
+            background: #FDC609;
+            padding: 10px;
+        }
+        
+        .orta-sag img{
+            box-shadow: 10px 10px 10px gray;
+        }
+        
+        .orta-resim{
+            margin: 0 25px;
+            
+        }
+        .card
+        {
+            width: 300px;
+            float: left;
+        }
+        /*.orta-card{
+            margin :0 30px;
+        }*/
+        
+        .card{
+            margin-right: 30px;
+        }
+        
+        .card:nth-child(3){
+            margin:0px;
+        }
+      
+        .card h1{
+            border-bottom: 1px dotted white;
+            padding-bottom: 15px;
+            
+        }
+        
+        .button a{
+            display: inline-block;
+            padding: 10px 15px;
+            color: #fdc609;
+            background-color: #232323;
+            text-decoration: none;
+            
+        }
+        
+        .clear{
+            clear: both;
+        }
+        
+        
+    </style>
+</head>
+ 
+<body>
+    <div class="sayfa">
+        <div class="ust">
+            <div id="logo">
+                <h1><a href="#">@aliyefh_sos</a></h1>
+                <p> Made by BGMALİY </p>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Ürünler</a></li>
+                    <li><a href="#">Referanslar</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+            <div class="orta">
+                <div class="orta-sol">
+                    <img src="images/demo/575x300.gif">
+                </div>
+                <div class="orta-sag">
+                    <h1>Cursus penati saccum ut.</h1>
+                    <p>
+                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. 
+                    </p>
+                    <img src="images/demo/100x100.gif">
+                    <img class="orta-resim" src="images/demo/100x100.gif">
+                    <img src="images/demo/100x100.gif">
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+        <div class="icerik">
+            <div class="card">
+                <h1>Ürün Açıklaması</h1>
+                <img src="images/demo/300x150.gif">
+                <p>
+                    Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+                </p>
+                <div class="button">
+                    <a href="">Daha Fazla >></a>
+                </div>
+            </div>
+            <div class="card orta-card">
+                <h1>Ürün Açıklaması</h1>
+                <img src="images/demo/300x150.gif">
+                <p>
+                    Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+                </p>
+                <div class="button">
+                    <a href="">Daha Fazla >></a>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Ürün Açıklaması</h1>
+                <img src="images/demo/300x150.gif">
+                <p>
+                    Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+                </p>
+                <div class="button">
+                    <a href="">Daha Fazla >></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
 </html>
