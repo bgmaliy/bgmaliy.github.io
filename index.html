@@ -1,213 +1,242 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-    <style>
-        body{
-            background: #131313;
-            color: #525252;
-            font-family: verdana,Arial,Helvetica,sans-serif;
-            margin: 0;
-            padding: 0;
-            font-size: 12px;
-        }
-        .sayfa{
-            width: 960px;
-            margin: auto;
-        }
-        .ust{
-            background: #232323;
-        }
-        #logo{
-            float: left;
-            width: 260px;
-            margin-top: 7px;
-            margin-left: 10px;
-        }
-        
-        #logo h1{
-            margin: 0;
-            padding: 0;
-            font-size: 42px;
-            text-transform: uppercase;
-            
-        }
-        
-        #logo h1 a{
-            font-family: Georgia;
-            text-decoration: none;
-            color: #DBDBDB;
-            letter-spacing: 3px;
-        }
-        
-        #logo p{
-            color: #DBDBDB;
-            font-family: Georgia;
-            margin-left: 3px;
-            margin-top: 0;
-            padding-top: 0;
-            letter-spacing: 2px;
-        }
-        
-        #menu{
-            float: right;
-            width: 650px;
-            margin: 30px 0 0 0;
-            padding: 0;
-            font-size: 13px;
-            text-align: right;
-        }
-        
-        #menu ul{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        #menu ul li{
-            display: inline;
-            margin-right: 35px;
-        }
-        
-        #menu ul li a{
-            text-decoration: none;
-            font-size: 13px;
-            font-family: Verdana;
-            color: #DBDBDB;
-        }
-        
-        .orta{
-            
-            margin-top: 20px;
-        }
-        .orta-sol{
-            width: 575px;
-            float: left;
-        }
-        .orta-sag{
-            width: 360px;
-            float: right;
-            height: 280px;
-            background: #FDC609;
-            padding: 10px;
-        }
-        
-        .orta-sag img{
-            box-shadow: 10px 10px 10px gray;
-        }
-        
-        .orta-resim{
-            margin: 0 25px;
-            
-        }
-        .card
-        {
-            width: 300px;
-            float: left;
-        }
-        /*.orta-card{
-            margin :0 30px;
-        }*/
-        
-        .card{
-            margin-right: 30px;
-        }
-        
-        .card:nth-child(3){
-            margin:0px;
-        }
-      
-        .card h1{
-            border-bottom: 1px dotted white;
-            padding-bottom: 15px;
-            
-        }
-        
-        .button a{
-            display: inline-block;
-            padding: 10px 15px;
-            color: #fdc609;
-            background-color: #232323;
-            text-decoration: none;
-            
-        }
-        
-        .clear{
-            clear: both;
-        }
-        
-        
-    </style>
-</head>
- 
-<body>
-    <div class="sayfa">
-        <div class="ust">
-            <div id="logo">
-                <h1><a href="#">@aliyefh_sos</a></h1>
-                <p> Made by BGMALİY </p>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#">Anasayfa</a></li>
-                    <li><a href="#">Ürünler</a></li>
-                    <li><a href="#">Referanslar</a></li>
-                    <li><a href="#">Hakkımızda</a></li>
-                    <li><a href="#">İletişim</a></li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-        </div>
-            <div class="orta">
-                <div class="orta-sol">
-                    <img src="images/demo/575x300.gif">
-                </div>
-                <div class="orta-sag">
-                    <h1>Cursus penati saccum ut.</h1>
-                    <p>
-                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. 
-                    </p>
-                    <img src="images/demo/100x100.gif">
-                    <img class="orta-resim" src="images/demo/100x100.gif">
-                    <img src="images/demo/100x100.gif">
-                </div>
-                <div class="clear"></div>
-            </div>
-        
-        <div class="icerik">
-            <div class="card">
-                <h1>Ürün Açıklaması</h1>
-                <img src="images/demo/300x150.gif">
-                <p>
-                    Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                </p>
-                <div class="button">
-                    <a href="">Daha Fazla >></a>
-                </div>
-            </div>
-            <div class="card orta-card">
-                <h1>Ürün Açıklaması</h1>
-                <img src="images/demo/300x150.gif">
-                <p>
-                    Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                </p>
-                <div class="button">
-                    <a href="">Daha Fazla >></a>
-                </div>
-            </div>
-            <div class="card">
-                <h1>Ürün Açıklaması</h1>
-                <img src="images/demo/300x150.gif">
-                <p>
-                    Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                </p>
-                <div class="button">
-                    <a href="">Daha Fazla >></a>
-                </div>
-            </div>
-        </div>
-        
+<div>
+
+  These notes accompany the Stanford CS class <a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a>. For questions/concerns/bug reports, please submit a pull request directly to our <a href="https://github.com/cs231n/cs231n.github.io">git repo</a>.
+  <br>
+  <!-- For questions/concerns/bug reports contact <a href="http://cs.stanford.edu/people/jcjohns/">Justin Johnson</a> regarding the assignments, or contact <a href="http://cs.stanford.edu/people/karpathy/">Andrej Karpathy</a> regarding the course notes. You can also submit a pull request directly to our <a href="https://github.com/cs231n/cs231n.github.io">git repo</a>. -->
+  <!-- <br> -->
+  <!-- We encourage the use of the <a href="https://hypothes.is/">hypothes.is</a> extension to annote comments and discuss these notes inline. -->
+</div>
+
+<div class="home">
+  <div class="materials-wrap">
+    <div class="module-header">Spring 2021 Assignments</div>
+      <div class="materials-item">
+        <a href="assignments2021/assignment1/">Assignment #1: Image Classification, kNN, SVM, Softmax, Fully Connected Neural Network</a>
+      </div>
+      <div class="materials-item">
+        <a href="assignments2021/assignment2/">Assignment #2: Fully Connected and Convolutional Nets, Batch Normalization, Dropout, Frameworks</a>
+      </div>
+      <div class="materials-item">
+        <a href="assignments2021/assignment3/">Assignment #3: Image Captioning with RNNs and Transformers, Network Visualization,
+          Generative Adversarial Networks, Self-Supervised Contrastive Learning</a>
+      </div>
+  </div>
+<!--
+    <div class="materials-item">
+      <a href="assignments2019/assignment2/">
+        Assignment #2: Fully Connected Nets, Batch Normalization, Dropout,
+        Convolutional Nets
+      </a>
     </div>
-</body>
-</html>
+    <div class="materials-item">
+      <a href="assignments2019/assignment3/">
+        Assignment #3: Image Captioning with Vanilla RNNs, Image Captioning
+  with LSTMs, Network Visualization, Style Transfer, Generative Adversarial Networks
+      </a>
+    </div> -->
+    <!--
+    <div class="module-header">Spring 2018 Assignments</div>
+    <div class="materials-item">
+      <a href="assignments2018/assignment1/">
+        Assignment #1: Image Classification, kNN, SVM, Softmax, Neural Network
+      </a>
+    </div>
+    <div class="materials-item">
+      <a href="assignments2018/assignment2/">
+        Assignment #2: Fully-Connected Nets, Batch Normalization, Dropout,
+        Convolutional Nets
+      </a>
+    </div>
+    <div class="materials-item">
+      <a href="assignments2018/assignment3/">
+        Assignment #3: Image Captioning with Vanilla RNNs, Image Captioning
+        with LSTMs, Network Visualization, Style Transfer, Generative Adversarial Networks
+      </a>
+    </div>
+    -->
+
+    <!--
+    <div class="module-header">Winter 2016 Assignments</div>
+    <div class="materials-item">
+      <a href="assignments2016/assignment1/">
+        Assignment #1: Image Classification, kNN, SVM, Softmax, Neural Network
+      </a>
+    </div>
+    <div class="materials-item">
+      <a href="assignments2016/assignment2/">
+        Assignment #2: Fully-Connected Nets, Batch Normalization, Dropout,
+        Convolutional Nets
+      </a>
+    </div>
+    <div class="materials-item">
+      <a href="assignments2016/assignment3/">
+        Assignment #3: Recurrent Neural Networks, Image Captioning,
+        Image Gradients, DeepDream
+      </a>
+    </div>
+    -->
+
+    <!--
+    <div class="module-header">Winter 2015 Assignments</div>
+    <div class="materials-item">
+      <a href="assignment1/">
+        Assignment #1: Image Classification, kNN, SVM, Softmax
+      </a>
+    </div>
+    <div class="materials-item">
+      <a href="assignment2/">
+        Assignment #2: Neural Networks, ConvNets I
+      </a>
+    </div>
+    <div class="materials-item">
+      <a href="assignment3/">
+        Assignment #3: ConvNets II, Transfer Learning, Visualization
+      </a>
+    </div>
+  -->
+
+    <div class="module-header">Module 0: Preparation</div>
+
+    <div class="materials-item">
+      <a href="setup-instructions/">
+        Software Setup
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="python-numpy-tutorial/">
+        Python / Numpy Tutorial (with Jupyter and Colab)
+      </a>
+    </div>
+<!--
+    <div class="materials-item">
+      <a href="terminal-tutorial/">
+        Terminal.com Tutorial
+      </a>
+    </div>
+-->
+    <div class="materials-item">
+      <a href="https://github.com/cs231n/gcloud">
+        Google Cloud Tutorial
+      </a>
+    </div>
+    <!-- <div class="materials-item">
+      <a href="aws-tutorial/">
+        AWS Tutorial
+      </a>
+    </div> -->
+
+    <!-- hardcoding items here to force a specific order -->
+    <div class="module-header">Module 1: Neural Networks</div>
+
+    <div class="materials-item">
+      <a href="classification/">
+        Image Classification: Data-driven Approach, k-Nearest Neighbor, train/val/test splits
+      </a>
+      <div class="kw">
+        L1/L2 distances, hyperparameter search, cross-validation
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="linear-classify/">
+         Linear classification: Support Vector Machine, Softmax
+      </a>
+      <div class="kw">
+        parameteric approach, bias trick, hinge loss, cross-entropy loss, L2 regularization, web demo
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="optimization-1/">
+        Optimization: Stochastic Gradient Descent
+      </a>
+      <div class="kw">
+        optimization landscapes, local search, learning rate, analytic/numerical gradient
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="optimization-2/">
+        Backpropagation, Intuitions
+      </a>
+      <div class="kw">
+        chain rule interpretation, real-valued circuits, patterns in gradient flow
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-1/">
+          Neural Networks Part 1: Setting up the Architecture
+      </a>
+      <div class="kw">
+        model of a biological neuron, activation functions, neural net architecture, representational power
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-2/">
+          Neural Networks Part 2: Setting up the Data and the Loss
+      </a>
+      <div class="kw">
+          preprocessing, weight initialization, batch normalization, regularization (L2/dropout), loss functions
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-3/">
+        Neural Networks Part 3: Learning and Evaluation
+      </a>
+      <div class="kw">
+        gradient checks, sanity checks, babysitting the learning process, momentum (+nesterov), second-order methods, Adagrad/RMSprop, hyperparameter optimization, model ensembles
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-case-study/">
+          Putting it together: Minimal Neural Network Case Study
+      </a>
+      <div class="kw">
+        minimal 2D toy data example
+      </div>
+    </div>
+
+    <div class="module-header">Module 2: Convolutional Neural Networks</div>
+
+    <div class="materials-item">
+      <a href="convolutional-networks/">
+        Convolutional Neural Networks: Architectures, Convolution / Pooling Layers
+      </a>
+      <div class="kw">
+          layers, spatial arrangement, layer patterns, layer sizing patterns, AlexNet/ZFNet/VGGNet case studies, computational considerations
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="understanding-cnn/">
+        Understanding and Visualizing Convolutional Neural Networks
+      </a>
+      <div class="kw">
+        tSNE embeddings, deconvnets, data gradients, fooling ConvNets, human comparisons
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="transfer-learning/">
+        Transfer Learning and Fine-tuning Convolutional Neural Networks
+      </a>
+    </div>
+
+    <div class="module-header">Student-Contributed Posts</div>
+
+    <div class="materials-item">
+      <a href="choose-project/">
+        Taking a Course Project to Publication
+      </a>
+      <a href="rnn/">
+        Recurrent Neural Networks
+      </a>
+    </div>
+
+  </div>
+</div>
