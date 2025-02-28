@@ -1,38 +1,83 @@
+/* Ümumi Stil */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Hamburger Menyu */
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Menyu (gizlədilmiş vəziyyətdə) */
+nav {
+    display: none;
+    background: #444;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* Açıq vəziyyətdə olan menyu */
+nav.active {
+    display: block;
+}
+
+/* Menyu Linkləri */
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-header {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
+nav ul li {
     padding: 10px;
-    background-color: #007BFF;
+    text-align: center;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mobil üçün uyğunlaşdırma */
+@media (min-width: 600px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
 }
