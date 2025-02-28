@@ -1,4 +1,8 @@
-function toggleMenu() {
+document.addEventListener("DOMContentLoaded", function () {
+    var menuToggle = document.querySelector(".menu-toggle");
     var menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-}
+
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
