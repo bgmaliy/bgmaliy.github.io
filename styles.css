@@ -1,18 +1,42 @@
 /* Ümumi Stil */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #007bff, #6610f2);
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlıq fontu */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Kiçik başlıqlar */
+h2 {
+    font-size: 28px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* Paragraflar */
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 /* Hamburger Menyu */
@@ -23,21 +47,22 @@ header {
     font-size: 30px;
     cursor: pointer;
     display: block;
+    color: white;
 }
 
-/* Menyu (gizlədilmiş vəziyyətdə) */
+/* Menyu */
 nav {
     display: none;
-    background: #444;
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     position: absolute;
     top: 60px;
     right: 20px;
-    width: 150px;
-    border-radius: 5px;
+    width: 200px;
+    border-radius: 8px;
 }
 
-/* Açıq vəziyyətdə olan menyu */
+/* Açıq Menyu */
 nav.active {
     display: block;
 }
@@ -49,7 +74,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -57,9 +82,57 @@ nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-/* Mobil üçün uyğunlaşdırma */
+nav ul li a:hover {
+    background: #007bff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Bölmə Dizaynı */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Developer Hesabları */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Linklər */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #6610f2;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Mobil Uyğunlaşdırma */
 @media (min-width: 600px) {
     .menu-toggle {
         display: none;
