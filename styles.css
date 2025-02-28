@@ -3,39 +3,42 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #007bff, #6610f2);
+    background: rgba(20, 20, 20, 0.9);
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Başlıq fontu */
 h1 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 /* Kiçik başlıqlar */
 h2 {
-    font-size: 28px;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    font-size: 24px;
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 5px;
     display: inline-block;
 }
 
 /* Paragraflar */
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -44,33 +47,45 @@ p {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 32px;
     cursor: pointer;
-    display: block;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
 }
 
 /* Menyu */
 nav {
     display: none;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 15px;
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: 20px;
-    width: 200px;
-    border-radius: 8px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* Açıq Menyu */
 nav.active {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Menyu Linkləri */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -79,27 +94,29 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #00aaff;
     text-decoration: none;
     display: block;
     font-size: 18px;
-    transition: 0.3s;
+    transition: background 0.3s, transform 0.2s;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background: #007bff;
-    padding: 8px;
-    border-radius: 5px;
+    background: rgba(0, 170, 255, 0.3);
+    transform: scale(1.05);
 }
 
 /* Bölmə Dizaynı */
 section {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(40, 40, 40, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
 }
 
 /* Developer Hesabları */
@@ -108,28 +125,31 @@ ul {
 }
 
 ul li {
-    font-size: 18px;
-    padding: 5px 0;
+    font-size: 16px;
+    padding: 6px 0;
 }
 
 /* Linklər */
 a {
-    color: #007bff;
+    color: #00aaff;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 a:hover {
-    color: #6610f2;
+    color: #ff00ff;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #181818;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+    font-size: 14px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Mobil Uyğunlaşdırma */
@@ -143,6 +163,8 @@ footer {
         position: static;
         width: auto;
         background: none;
+        opacity: 1;
+        transform: none;
     }
 
     nav ul {
@@ -151,6 +173,10 @@ footer {
     }
 
     nav ul li {
-        margin: 0 15px;
+        margin: 0 12px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
     }
 }
