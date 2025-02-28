@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brend UserBot</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- JavaScript əlavə edildi -->
 </head>
 <body>
     <header>
         <h1>Brend UserBot</h1>
         <p>Botun tanıtımı və qurulma qaydası haqqında məlumat</p>
-        <nav>
+        <!-- Hamburger menyu düyməsi -->
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menu">
             <ul>
                 <li><a href="index.html">Ana Səhifə</a></li>
-                <li><a href="about.html">Haqqında</a></li> <!-- Haqqında səhifəsinə keçid -->
-                <li><a href="news.html">Yeniliklər</a></li> <!-- Yeniliklər səhifəsinə keçid -->
+                <li><a href="about.html">Haqqında</a></li>
+                <li><a href="news.html">Yeniliklər</a></li>
             </ul>
         </nav>
     </header>
@@ -22,15 +25,6 @@
     <section>
         <h2>Botun Qurulma Qaydası</h2>
         <p>Burada userbotun qurulma qaydaları haqqında detallı məlumat olacaq.</p>
-    </section>
-    
-    <section>
-        <h2>Developer Hesabları</h2>
-        <p>Developer hesablara buradan baxa bilərsiniz:</p>
-        <ul>
-            <li><a href="https://github.com/username" target="_blank">Developer 1</a></li>
-            <li><a href="https://github.com/username" target="_blank">Developer 2</a></li>
-        </ul>
     </section>
     
     <footer>
